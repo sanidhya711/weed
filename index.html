@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heavenly Weed</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+  <div id="loading">
+    <img src="navbar logo.png">
+    <div id="loader">
+      <div id="loader_inner">
+        growing Weed
+      </div>
+    </div>
+  </div>
+
+    <img id="smoke" src="smoke.png">
+    <img id="navbar-logo" src="navbar logo.png">
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a style="margin-left: 40px;" class="navbar-brand" href="#">
+            Heavenly Weed
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
+    <div id="logo-holder">
+        <img id="logo" src="logo.png">  
+        <h1 id="in-developement">In Developement</h1>
+        <canvas></canvas>
+    </div>
+
+    <br>
+    <br>
+    <img id="snoop-dogg" src="snoop.gif">
+    <img id="elon-musk" src="elon.png">
+
+    <script>
+      var imgs = document.images,
+          len = imgs.length,
+          counter = 0;
+
+      [].forEach.call( imgs, function( img ) {
+          if(img.complete)
+            incrementCounter();
+          else
+            img.addEventListener( 'load', incrementCounter, false );
+      } );
+
+      function incrementCounter() {
+          counter++;
+          if ( counter === len ) {
+              $("#loading").fadeOut(1500);
+          }
+      }
+    </script>
+    <script type="module" src="index.js"></script>
+    
+</body>
+</html>
