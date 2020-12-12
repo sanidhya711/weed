@@ -98,3 +98,19 @@ canvas{
     left: 110px;
     bottom: 120px;
 }
+#doremon{
+    height: 270px;
+    top: -7px;
+    transform: rotate(140deg);
+    position: absolute;
+    left: -70px;
+    z-index: -1;
+}
+#naruto{
+    height: 300px;
+    transform: rotate(344deg);
+    position: absolute;
+    top: -10px;
+    z-index: -1;
+    right: -160px;
+}
