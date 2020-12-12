@@ -25,7 +25,6 @@ body{
 }
 #smoke{
     position: absolute;
-    bottom: -225px;
     opacity: 30%;
     width: 100vw;
 }
